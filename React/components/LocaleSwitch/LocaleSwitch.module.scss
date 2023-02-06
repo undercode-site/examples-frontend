@@ -1,0 +1,36 @@
+.switch {
+
+  .list {
+    display: flex;
+    align-items: center;
+
+    .locale {
+      margin-right: 10px;
+
+      opacity: 0.5;
+      box-shadow: 0 0 0 rgba(12, 20, 63, 0);
+      cursor: pointer;
+
+      transition: $transition;
+      transition-property: opacity, box-shadow;
+
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover:not(.active) {
+        opacity: 1;
+        box-shadow: 0 0 10px rgba(12, 20, 63, 0.25);
+      }
+
+      &.active {
+        opacity: 1;
+      }
+
+      .imageWrap {
+        display: flex;
+      }
+    }
+  }
+}

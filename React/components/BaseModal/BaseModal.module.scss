@@ -1,0 +1,36 @@
+
+.modal {
+  position: relative;
+  padding: 120px;
+
+  background: $white;
+  box-shadow: 2px 3px 16px rgba(12, 20, 63, 0.08);
+  border-radius: 8px;
+
+  &.gray {
+    background: $panel_background;
+  }
+
+  &.paddingSmall {
+    padding: 50px 50px 25px;
+  }
+
+  &.small {
+    padding: 70px 100px;
+  }
+
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    margin: 40px;
+    display: flex;
+
+    cursor: pointer;
+  }
+
+  .body {
+
+  }
+}
